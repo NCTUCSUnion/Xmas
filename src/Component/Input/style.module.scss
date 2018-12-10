@@ -1,0 +1,63 @@
+$red: #F23030;
+.container{
+    position: relative;
+    padding: 10px;
+    margin-bottom: 2px;
+  }
+.input{
+    position: relative;
+    display: block;
+    outline: none;
+    border: none;
+    background: transparent;
+    padding: 12px 10px 10px 5px;
+    font-size: 16px;
+    line-height: 16px;
+    border-bottom: 1px solid #757575;
+    &:valid {
+      border-bottom: 1px solid darken($red,10);
+    }
+    &:focus{
+      border-bottom: 1px solid darken($red,10);
+      transition: .5s;
+    }
+    &:focus ~ .label, &:valid ~ .label {
+      transition: .2s;
+      top: 2px;
+      font-size: 14px;
+      line-height: 14px;
+      color: darken($red,10)
+    }
+  }
+.label {
+    transition: .2s;
+    position: absolute;
+    top: 24px;
+    left: 14px;
+    color: #888;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    z-index: -10;
+}
+
+.textarea{
+    width: 90%;
+    background: transparent;
+    border: 1px solid transparent;
+    font-size: 16px;
+    padding: 12px 10px 10px 5px;
+    border-bottom: 1px solid #757575;
+    &:valid,&:focus{
+        outline: none;
+        border-bottom: 1px solid darken($red,10);
+        transition: .5s;
+    }
+    &:focus ~ .label, &:valid ~ .label {
+        transition: .2s;
+        top: 2px;
+        font-size: 14px;
+        line-height: 14px;
+        color: darken($red,10)
+      }
+}
