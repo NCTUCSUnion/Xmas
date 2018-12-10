@@ -27,6 +27,15 @@ class Intro extends React.Component{
     this.handleDel = this.handleDel.bind(this)
     this.handleUpload = this.handleUpload.bind(this)
   }
+  componentWillMount(){
+    if(this.props.qrcode){
+      axios.post(`${base_url}/merryweek/update`,{
+        id: this.props.id,
+        code: this.props.qrcode
+      }).catch(err => console.log(err))
+    }
+  }
+  
   componentDidMount(){
     if(this.props.id){
       axios.post(`${base_url}/merryweek/load`,{
