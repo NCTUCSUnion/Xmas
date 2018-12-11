@@ -18,6 +18,7 @@ const Home = () => (
     <div className={classes.login} onClick={() => { window.location.href = ('https://csunion.nctu.me/_api/auth/login?qs=') }}>
       <div className={classes.text}>登入</div>
     </div>
+    <div className={classes.footer}>&copy; CopyRight 交大資工09系學會 <a href='https://github.com/NCTUCSUnion/Xmas'><i className='fab fa-github' /></a></div>
   </div>
 )
 

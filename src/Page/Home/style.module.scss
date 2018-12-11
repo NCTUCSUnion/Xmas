@@ -110,4 +110,19 @@ $red: #F23030;
             }
         }
     }
+    .footer{
+        position: absolute;
+        width: 100%;
+        height: 25px;
+        text-align: center;
+        line-height: 25px;
+        font-size: 13px;
+        bottom: 0;
+        color: white;
+        background: #333;
+        a{
+            font-size: 14px;
+            color: white;
+        }
+    }
 }
