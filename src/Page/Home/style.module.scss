@@ -1,5 +1,8 @@
 $red: #F23030;
 .wallpaper{
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
     .title{
         position: absolute;
         top: 20%;
@@ -41,16 +44,18 @@ $red: #F23030;
             padding-left: .5rem;
             font-size: 1.4rem;
             font-weight: 300;
+        @media all and (max-width: 780px) {
+            direction: rtl;
+    }
         }
         @media all and (max-width: 780px) {
             position: absolute;
             font-size: 2.6rem;
             font-weight: 200;
-            padding: 1rem 2rem;
+            padding: 1rem 1rem;
             top: 30%;
             right: -5%;
             transform: rotate(-30deg);
-            direction: rtl;
             border-right: .5rem solid darken(#328C59,0);
             transform-origin: bottom right;
         }

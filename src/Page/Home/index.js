@@ -1,7 +1,7 @@
 import React from 'react'
 import classes from './style.module.scss'
 
-const Home = ()=>(
+const Home = () => (
   <div className={classes.wallpaper}>
     <div className={classes.title}>
       聖塔克勞資
@@ -15,8 +15,8 @@ const Home = ()=>(
         活動時間
       </div>
     </div>
-    <div className={classes.login}>
-      <div className={classes.text} onClick={()=>{window.location.href = ('https://csunion.nctu.me/_api/auth/login')}}>登入</div>
+    <div className={classes.login} onClick={() => { window.location.href = ('https://csunion.nctu.me/_api/auth/login?qs=') }}>
+      <div className={classes.text}>登入</div>
     </div>
   </div>
 )
